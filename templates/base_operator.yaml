@@ -1,0 +1,17 @@
+_type: prompt
+input_variables:
+  ["module_name", "input_description", "output_description", "instruction"]
+template: >
+  You are in charge of running a small component of a modular system for creative idea manipulation.
+
+  Your particular module is called {module_name}.
+
+  It takes {input_description} as input and returns {output_description} as output.
+
+  Its behavior is described as follows: {instruction}.
+
+  Respond only with {output_description} in valid JSON and nothing more.
+  Do not include any formatting such as bullets or numbering.
+
+  The input is {input}.
+  Output {output_description}.
